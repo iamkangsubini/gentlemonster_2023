@@ -1,0 +1,66 @@
+header {
+    width: calc(100% - 60px); /*full*/
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    width: 213px;
+    height: 35px;
+}
+header h1 img {width: 100% ;}
+header .right {
+    width: 586px;
+    height: 44px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right .lang {
+    font-weight: 500;
+    font-size: 1.250rem;
+    font-size: 20;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+header .right #searchFrm {
+    background-color: #9F9F9F;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+header .right #searchFrm fieldset {
+    width: 302px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+header .right #searchFrm fieldset #txt {
+    background: none;
+    margin-left: 11px;
+    color: #fff;
+}
+header .right #searchFrm fieldset #txt::placeholder {color: #fff;}
+header .right #searchFrm fieldset #searchBtn {
+    background: none;
+    width: 17px;
+    height: 17px;
+}
+header .right #searchFrm fieldset #searchBtn img {width: 100%;}
+header .right #login {
+    width: 28px; height: 28px;
+}
+header .right #login img {width: 100%;}
+header .right #basket {
+    width: 28px; height: 28px;
+}
+header .right #basket img {width: 100%;}
+header .right #menu {
+    width: 28px; height: 28px;
+}
+header .right #menu img {width: 100%;}

@@ -6,8 +6,30 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>GENTLEMONSTER</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <header>
+        <h1>
+            <img src="./images/logo.png" alt="GENTLEMONSTER">
+        </h1>
+        <div class="right">
+            <a href="#" class="lang">Shop in KR</a>
+            <form action="#" method="get" id="searchFrm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="text" placeholder="상품명을 입력해주세요" id="txt">
+                    <button type="submit" id="searchBtn">
+                        <img src="./images/icon_search.png" alt="">
+                    </button>
+                </fieldset>
+            </form>
+            <a href="#" id="login"><img src="./images/icon_person.png" alt=""></a>
+            <a href="#" id="basket"><img src="./images/icon_basket.png" alt=""></a>
+            <a href="#" id="menu"><img src="./images/icon_menu.png" alt=""></a>
+        </div>
+    </header>
 </body>
 </html>
