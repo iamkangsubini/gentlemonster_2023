@@ -1,3 +1,17 @@
+/* common.css 모든 웹페에지 공통 css == common */
+/* common.css == header, footer 공통영역 Design */
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 13px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 15px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #1DDA7F;}
+/* header */
 header {
     width: calc(100% - 60px); /*full*/
     height: 100px;
@@ -28,7 +42,7 @@ header .right .lang {
     color: #000;
 }
 header .right #searchFrm {
-    background-color: #9F9F9F;
+    background-color: #1DDA7F;
     border: 1px solid #000;
     border-radius: 30px;
 }
@@ -64,3 +78,48 @@ header .right #menu {
     width: 28px; height: 28px;
 }
 header .right #menu img {width: 100%;}
+/* open-nav */
+header #open_nav {
+    position: fixed; left: 0; top: 0; z-index: 999;
+    width: 100%; height: 100vh;
+    background: #f1f1f1;
+    overflow-y: auto;
+    /* 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치지 않다면 스크롤을 숨긴다. */
+}
+header #open_nav #nav_close {
+    position:absolute; top: 101px; right: 111px;
+    width: 45px; height: 45px;
+}
+header #open_nav #nav_close img {width: 100%;}
+/* swiper-slide nav-adver */
+header #open_nav #nav_adver {
+    max-width: 709px; margin: 20px auto; text-align: center;
+}
+header #open_nav #nav_adver .swiper-slide a {line-height: 24px;}
+header #open_nav #nav_adver .swiper-button-prev,
+header #open_nav #nav_adver .swiper-button-next {width: 24px; height: 24px; top: 20px;}
+header #open_nav #nav_adver .swiper-button-prev::after,
+header #open_nav #nav_adver .swiper-button-next::after {display: none;}
+header #open_nav #nav_adver .swiper-button-prev {
+    background: url(../images/adver_prev.png);
+}
+header #open_nav #nav_adver .swiper-button-next {
+    background: url(../images/adver_next.png);
+}
+/* open-nav nav */
+header #open_nav nav {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center; padding-top: 25px;
+}
+header #open_nav nav a {
+    font-weight: 700;
+    font-size: 3.157rem;
+    letter-spacing: -0.02em;
+    color: #000;
+    line-height: 100px;
+}
+header #open_nav nav a:hover {
+    color: #1DDA7F;
+    border-bottom: 1px solid #1DDA7F;
+}

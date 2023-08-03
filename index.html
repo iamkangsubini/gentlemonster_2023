@@ -6,6 +6,13 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>GENTLEMONSTER</title>
+    <!-- swiper slide -->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- favicon, style -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -29,6 +36,39 @@
             <a href="#" id="login"><img src="./images/icon_person.png" alt=""></a>
             <a href="#" id="basket"><img src="./images/icon_basket.png" alt=""></a>
             <a href="#" id="menu"><img src="./images/icon_menu.png" alt=""></a>
+        </div>
+        <!-- nav 클릭 시 open nav -->
+        <div id="open_nav">
+            <!-- 닫기 버튼 -->
+            <button id="nav_close" type="button">
+                <img src="./images/nav_close.png" alt="닫기">
+            </button>
+            <!-- 광고 슬라이드 -->
+            <div class="swiper" id="nav_adver">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">나에게 어울리는 제품을 찾으세요? 실시간 라이브 채팅으로 제품 추천을 받아보세요.</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">선물하기 서비스를 통해 소중한 분에게 마음을 전하세요.</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">무료 배송 반품  서비스로 젠틀 몬스터의 서비스를 경험하세요.</a>
+                    </div> <!-- end swiper-wrapper -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div><!-- end swiper adver -->
+            </div>
+            <!-- 내비게이션 -->
+            <nav>
+                <a href="#">선글라스</a>
+                <a href="#">안경</a>
+                <a href="#">콜라보레이션</a>
+                <a href="#">스타일</a>
+                <a href="#">브랜드이슈</a>
+                <a href="#">매장보기</a>
+                <a href="#">수리서비스</a>
+            </nav>
         </div>
     </header>
 </body>
