@@ -88,7 +88,7 @@ header #open_nav {
 }
 header #open_nav #nav_close {
     position:absolute; top: 101px; right: 111px;
-    width: 45px; height: 45px;
+    width: 45px; height: 45px; z-index: 999;
 }
 header #open_nav #nav_close img {width: 100%;}
 /* swiper-slide nav-adver */
