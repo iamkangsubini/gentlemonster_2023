@@ -1,0 +1,7 @@
+/* 반응형웹 */
+@media screen and (max-width:1500px){
+    /* 1500px 이하일때 */
+    main .visual video {
+        width: auto; height: 100%;
+    }
+}/* 1500 end */
