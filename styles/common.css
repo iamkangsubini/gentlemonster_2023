@@ -123,3 +123,38 @@ header #open_nav nav a:hover {
     color: #1DDA7F;
     border-bottom: 1px solid #1DDA7F;
 }
+/* footer */
+footer {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+footer .f_menu {
+    padding: 20px 0 40px;
+    display: flex;
+}
+footer .f_menu dl {margin-right: 50px;}
+footer .f_menu dt {
+    font-weight: 500;
+    font-size: 1.333rem ;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin-bottom: 20px;
+}
+footer .f_menu dd {
+    line-height: 25px;
+}
+footer .f_menu dd a {
+    letter-spacing: -0.02em;
+}
+footer .f_menu dd a:hover {
+    color: #1DDA7F;
+}
+footer .f_copy {
+    display: flex;
+}
+footer .f_copy .logo {width: 200px;}
+footer .f_copy .logo img {width: 100%;}
+footer .f_copy address {
+    line-height: 25px; margin: -10px 0 0 30px;
+}
+footer .f_copy address a {text-decoration: underline;}
