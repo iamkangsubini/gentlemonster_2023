@@ -1,0 +1,267 @@
+/* header */
+/* main */
+main {
+    width: 1380px; margin: 0 auto;
+    margin-top: 73px;
+}
+/* title */
+main .title {
+    width: 1380px; height: 156px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .title .logo {
+    width: 509px; height: 100;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .title .logo h1 {
+    background-color: #f1f1f1;
+    width: 388px; height: 100px;
+}
+main .title .logo h1 a {}
+main .title .logo h1 a img {width: 100%;}
+main .title .logo h2 {
+    font-weight: 700;
+    font-size: 2.369rem;
+    letter-spacing: -0.02em;
+    color: #333;
+}
+main .title .join {
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+    border: 1px solid #838383;
+    padding: 20px 50px;
+}
+/* contents */
+main .contents {
+    position: relative;
+    width: 1380px; height: 949px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+/* left */
+main .contents .left {
+    position: absolute;
+    top: 80px; left: 118.5px;
+    width: 514px; height: 789px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+main .contents .left .member {
+    width: 514px;
+    height: 55px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+main .contents .left .member #member_y_btn {
+    width: 257px;
+    font-size: 1.333rme;
+    letter-spacing: -0.02em;
+    color: #1dda7f;
+    background-color: #fff;
+    border: 1px solid #1dda7f;
+    padding: 20px 109px;
+}
+main .contents .left .member #member_n_btn {
+    width: 257px;
+    font-size: 1.333rme;
+    letter-spacing: -0.02em;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #838383;
+    padding: 20px 60px;
+}
+main .contents .left #login_frm {
+    width: 514px; height: 358px;
+}
+main .contents .left #login_frm fieldset {}
+main .contents .left #login_frm fieldset ul {}
+main .contents .left #login_frm fieldset ul li {}
+main .contents .left #login_frm fieldset ul li #user_id {
+    width: 514px; height: 65px; 
+    border: 1px solid #838383;
+    color: #333;
+    padding-left: 19px;
+    font-size: 1.777rem;
+    margin-bottom: 10px;
+}
+main .contents .left #login_frm fieldset ul li #user_pw {
+    width: 514px; height: 65px; 
+    border: 1px solid #838383;
+    color: #333;
+    padding-left: 19px;
+    font-size: 1.777rem;
+    margin-bottom: 35px;
+}
+main .contents .left #login_frm fieldset ul li .state {
+    width: 420px; height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+main .contents .left #login_frm fieldset ul li .state li:nth-child(1) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .contents .left #login_frm fieldset ul li .state li:nth-child(2) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .contents .left #login_frm fieldset ul li .state li #keep {
+    width: 30px; height: 30px;
+    margin-right: 9px;
+}
+main .contents .left #login_frm fieldset ul li .state li #save {
+    width: 30px; height: 30px;
+    margin-right: 9px;
+}
+main .contents .left #login_frm fieldset ul li .state li span {
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+}
+main .contents .left #login_frm fieldset ul li #login_btn {
+    font-weight: 700;
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+    background-color: #1dda7f;
+    padding: 27px 218.5px;
+    margin-bottom: 35px;
+}
+main .contents .left #login_frm fieldset ul li .find {
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    width: 259px;
+    margin-bottom: 59px; 
+}
+main .contents .left #login_frm fieldset ul li .find a {
+    font-size: 1.333rem;
+    letter-spacing: -0.02em;
+    color: #333;
+}
+main .contents .left #login_frm fieldset ul li .find .find_id::after {
+    display: block;
+    content: '';
+    width: 2px; height: 15px;
+    background: #333;
+    margin: 0 20px; 
+}
+main .contents .left .way {
+    width: 514px; height: 275px;
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+main .contents .left .way .naver,
+main .contents .left .way .kakao,
+main .contents .left .way .facebook,
+main .contents .left .way .easy {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 514px; height: 50px;
+}
+main .contents .left .way img {
+    width: 50px; height: 50px;
+}
+main .contents .left .way .naver > a {
+    width: 464px;
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #838383;
+    text-align: center;
+    padding: 14.5px 0; height: 50px;
+}
+main .contents .left .way .kakao > a {
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #838383;
+    text-align: center;
+    padding: 14.5px 0;
+    width: 464px; height: 50px;
+}
+main .contents .left .way .facebook > a {
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #838383;
+    text-align: center;
+    padding: 14.5px 0;
+    width: 464px; height: 50px; 
+}
+main .contents .left .way .easy > a {
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #838383;
+    text-align: center;
+    padding: 14.5px 0;
+    width: 464px; height: 50px;
+}
+/* right */
+main .contents .right {
+    position: absolute;
+    top: 80px; right: 118.5px;
+    width: 514px; height: 714px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+main .contents .right .case {
+    width: 514px; height: 507px;
+    margin-bottom: 23px;
+}
+main .contents .right .case img {
+    width: 100%;
+}
+main .contents .right .eye_care {
+    width: 514px; height: 184px;
+}
+main .contents .right .eye_care img {
+    width: 100%;
+}
+/* adver */
+main #adver {
+    width: 1380px; height: 90px; margin: 0 auto;
+    background: #222;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+main #adver img {
+    width: 130px; height: 60px;
+    margin-left: 385px;
+}
+main #adver p {
+    width: 500px; height: 21px;
+    font-weight: 700;
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0 370px 0 30px;
+}
+main #adver p em {
+    font-weight: 700;
+    font-size: 1.777rem;
+    letter-spacing: -0.02em;
+    color: #1dda7f;
+}
+/* footer */
