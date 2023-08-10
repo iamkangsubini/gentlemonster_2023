@@ -19,59 +19,12 @@
     <link rel="stylesheet" href="./styles/reponsive.css"><!-- 반응형css -->
 </head>
 <body>
-    <header>
-        <h1>
-            <img src="./images/logo.png" alt="GENTLEMONSTER">
-        </h1>
-        <div class="right">
-            <a href="#" class="lang">Shop in KR</a>
-            <form action="#" method="get" id="searchFrm">
-                <fieldset>
-                    <legend class="skip">검색양식</legend>
-                    <input type="text" placeholder="상품명을 입력해주세요" id="txt">
-                    <button type="submit" id="searchBtn">
-                        <img src="./images/icon_search.png" alt="">
-                    </button>
-                </fieldset>
-            </form>
-            <a href="#" id="login"><img src="./images/icon_person.png" alt=""></a>
-            <a href="#" id="basket"><img src="./images/icon_basket.png" alt=""></a>
-            <a href="#" id="menu"><img src="./images/icon_menu.png" alt=""></a>
-        </div>
-        <!-- nav 클릭 시 open nav -->
-        <div id="open_nav">
-            <!-- 닫기 버튼 -->
-            <button id="nav_close" type="button">
-                <img src="./images/nav_close.png" alt="닫기">
-            </button>
-            <!-- 광고 슬라이드 -->
-            <div class="swiper" id="nav_adver">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#">나에게 어울리는 제품을 찾으세요? 실시간 라이브 채팅으로 제품 추천을 받아보세요.</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">선물하기 서비스를 통해 소중한 분에게 마음을 전하세요.</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">무료 배송 반품  서비스로 젠틀 몬스터의 서비스를 경험하세요.</a>
-                    </div> <!-- end swiper-wrapper -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div><!-- end swiper adver -->
-            </div>
-            <!-- 내비게이션 -->
-            <nav>
-                <a href="#">선글라스</a>
-                <a href="#">안경</a>
-                <a href="#">콜라보레이션</a>
-                <a href="#">스타일</a>
-                <a href="#">브랜드이슈</a>
-                <a href="#">매장보기</a>
-                <a href="#">수리서비스</a>
-            </nav>
-        </div>
-    </header>
+    <!-- 모든 웹페이지에서 반복되는 header, footer 등과 같은 레이아웃은 html내에 작성해두면 수정할때 페이지 개수별로 수정해야해서 영역 1개 수정할 때 파일이 30개 있다면 30번 수정하는 방식으로 효율성이 떨어지므로 반복되는 영역을 잘라서(Ctrl+x) php 파일로 분리 후 링크로 연결해서 작성한다. -->
+    <!-- php 주의사항  -->
+    <!-- php 백앤드언어(서버)로 동적기능을 제공하는 웹호스팅에 올렸을때만 결과를 확인할 수 있다. 로컬(내컴퓨터)환경에서는 볼 수 없다. 로컬환경에서 볼 수 없어 실시간 편집이 불가능하기때문에 php제작은 header, footer, html, css, js 구성을 모두 완료한 후 마지막에 php로 제작한다. -->
+    <!-- php 연결문법 -->
+    <!-- <?php include ("php경로") ?> -->
+    <?php include('./header.php') ?>
     <main>
         <div class="visual">
                 <div class="txt">
@@ -115,49 +68,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="f_menu">
-            <dl class="service">
-                <dt>고객 서비스</dt>
-                <dd><a href="#">문의</a></dd>
-                <dd><a href="#">배송</a></dd>
-                <dd><a href="#">서비스</a></dd>
-                <dd><a href="#">교환 및 반품</a></dd>
-                <dd><a href="#">주문조회</a></dd>
-                <dd><a href="#">주문취소</a></dd>
-                <dd><a href="#">매장 픽업 서비스</a></dd>
-                <dd><a href="#">수리서비스 가이드</a></dd>
-                <dd><a href="#">제품 사용 가이드</a></dd>
-                <dd><a href="#">정품 인증</a></dd>
-                <dd><a href="#">FAQ</a></dd>
-            </dl>
-            <dl class="law">
-                <dt>법적 고지</dt>
-                <dd><a href="#">공지사항</a></dd>
-                <dd><a href="#">이용약관</a></dd>
-                <dd><a href="#">개인정보처리방침</a></dd>
-                <dd><a href="#">쿠키 정책</a></dd>
-                <dd><a href="#">기프트카드 이용약관</a></dd>
-            </dl>
-            <dl class="sns">
-                <dt>소셜 미디어</dt>
-                <dd><a href="#">페이스북</a></dd>
-                <dd><a href="#">인스타그램</a></dd>
-                <dd><a href="#">유튜브</a></dd>
-                <dd><a href="#">트위터</a></dd>
-                <dd><a href="#">카카오톡</a></dd>
-                <dd><a href="#">핀터레스트</a></dd>
-                <dd><a href="#">위젯</a></dd>
-                <dd><a href="#">웨이보</a></dd>
-            </dl>
-        </div>
-        <div class="f_copy">
-            <p class="logo"><img src="./images/logo.png" alt="2023 젠틀몬스터"></p>
-            <address>
-                주) 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050 호 <a href="#">(사업자 정보 확인)</a> | 이메일 문의:<br><a href="#">cs@gentlemonster.com</a> | 개인정보보호책임자: 정태호 | 주소: 서울특별시 마포구 어울마당로5길 41 | 대표번호: <a href="#">1600-2126</a><br>고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. 서비스 가입사실 확인
-            </address>
-        </div>
-    </footer>
+    <?php include('./footer.php') ?>
     <!-- header, footer 웹페이지 공통영역 적용JS -->
     <script src="./script/common.js"></script>
 </body>

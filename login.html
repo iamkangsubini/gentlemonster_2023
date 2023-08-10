@@ -6,6 +6,10 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>LOGIN | GENTLEMONSTER</title>
+    <!-- swiper slide -->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- favicon, style -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
@@ -15,15 +19,11 @@
 </head>
 <body>
     <!-- header -->
+    <?php include('./header.php') ?>
     <main>
         <!-- title -->
         <div class="title">
-            <div class="logo">
-                <h1>
-                    <a href="#"><img src="./images/logo.png" alt="GENTLEMONSTER"></a>
-                </h1>
-                <h2>로그인</h2>
-            </div>
+            <h1>로그인</h1>
             <a href="#" class="join">회원가입</a>
         </div>
         <!-- contents -->
@@ -98,5 +98,23 @@
         </a>
     </main>
     <!-- footer -->
+    <!-- js -->
+    <script>
+        const member_y_btn = document.querySelector('#member_y_btn')
+        const member_n_btn = document.querySelector('#member_n_btn')
+        const user_id = document.querySelector('#user_id')
+        const user_pw = document.querySelector('#user_pw')
+        const login_btn = document.querySelector('#login_btn')
+        const keep = document.querySelector('#keep')
+        console.log(member_y_btn, member_n_btn, user_id, user_pw, login_btn, keep)
+        //로그인 상태 유지 체크박스 클릭시, '로그인 상태를 유지하겠습니까?' 팝업창 뜨기
+        keep.addEventListener('click',function(){
+            window.alert = '로그인 상태를 유지하겠습니까?'
+        });
+    </script>
+    <!-- header, footer 웹페이지 공통영역 적용JS -->
+    <!-- <?php include ("php경로") ?> -->
+    <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
 </body>
 </html>

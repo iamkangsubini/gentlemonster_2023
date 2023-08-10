@@ -1,0 +1,305 @@
+/* catetory */
+main #category {
+    background: lightcoral;
+    width: 1350px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 99px 0;
+}
+/* all */
+main #category .all {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .all a {}
+main #category .all a img {margin-bottom: 26px;}
+main #category .all a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* best */
+main #category .best {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .best a {}
+main #category .best a img {margin-bottom: 26px;}
+main #category .best a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* bluelight */
+main #category .bluelight {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .bluelight a {}
+main #category .bluelight a img {margin-bottom: 26px;}
+main #category .bluelight a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* tint */
+main #category .tint {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .tint a {}
+main #category .tint a img {margin-bottom: 26px;}
+main #category .tint a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* present */
+main #category .present {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .present a {}
+main #category .present a img {margin-bottom: 26px;}
+main #category .present a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* rectangle_frame */
+main #category .rectangle_frame {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .rectangle_frame a {}
+main #category .rectangle_frame a img {margin-bottom: 26px;}
+main #category .rectangle_frame a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* circle_frame */
+main #category .circle_frame {
+    width: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+main #category .circle_frame a {}
+main #category .circle_frame a img {margin-bottom: 26px;}
+main #category .circle_frame a span {
+    font-size: 1.563rem;
+    letter-spacing: -0.02em;
+}
+/* product_list */
+main #product_list {
+    background: lightgoldenrodyellow;
+    width: 1380px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+/* title */
+main #product_list .title {}
+/* top */
+main #product_list .title .top {
+    height: 27px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #222; padding: 40px 0;
+}
+main #product_list .title .top h1 {
+    font-weight: 700; font-size: 2.369rem; letter-spacing: -0.02em;
+}
+main #product_list .title .top .type {
+    width: 304px; height: 15px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main #product_list .title .top .type a {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+/* bottom */
+main #product_list .title .bottom {
+    margin-top: 40px;
+    height: 12px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+}
+main #product_list .title .bottom p {
+    letter-spacing: -0.02em;
+}
+main #product_list .title .bottom p em {
+    font-weight: 700; letter-spacing: -0.02em;
+}
+main #product_list .title .bottom #product_align {}
+main #product_list .title .bottom #product_align option {
+    letter-spacing: -0.02em ;
+}
+/* container */
+main #product_list .container {
+    background: lightpink;
+    width: 1380px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-top: 40px;
+}
+/* item1 */
+main #product_list .container .item1 {
+    width: 259px; height: 444px; 
+    display: flex; flex-flow: column nowrap;justify-content: space-between;
+}
+main #product_list .container .item1 .box {position: relative;}
+main #product_list .container .item1 .box .item_img {
+    width: 259px; height: 312px;
+}
+main #product_list .container .item1 .box .item_img img {width: 100%;}
+main #product_list .container .item1 .box .like_img {
+    width: 23px; height: 23px;
+    position: absolute;
+    top: 16px; right: 16px;
+}
+main #product_list .container .item1 .box .like_img img {width: 100%;}
+main #product_list .container .item1 .txt {
+    height: 113px;
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between; align-items: flex-start;
+}
+main #product_list .container .item1 .txt h2 {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item1 .txt .name {
+    font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #product_list .container .item1 .txt .price {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item1 .txt .color {}
+/* item2 */
+main #product_list .container .item2 {
+    width: 259px; height: 444px; 
+    display: flex; flex-flow: column nowrap;justify-content: space-between;
+}
+main #product_list .container .item2 .box {position: relative;}
+main #product_list .container .item2 .box .item_img {
+    width: 259px; height: 312px;
+}
+main #product_list .container .item2 .box .item_img img {width: 100%;}
+main #product_list .container .item2 .box .like_img {
+    width: 23px; height: 23px;
+    position: absolute;
+    top: 16px; right: 16px;
+}
+main #product_list .container .item2 .box .like_img img {width: 100%;}
+main #product_list .container .item2 .txt {
+    height: 113px;
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between; align-items: flex-start;
+}
+main #product_list .container .item2 .txt h2 {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item2 .txt .name {
+    font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #product_list .container .item2 .txt .price {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item2 .txt .color {}
+/* item3 */
+main #product_list .container .item3 {
+    width: 259px; height: 444px; 
+    display: flex; flex-flow: column nowrap;justify-content: space-between;
+}
+main #product_list .container .item3 .box {position: relative;}
+main #product_list .container .item3 .box .item_img {
+    width: 259px; height: 312px;
+}
+main #product_list .container .item3 .box .item_img img {width: 100%;}
+main #product_list .container .item3 .box .like_img {
+    width: 23px; height: 23px;
+    position: absolute;
+    top: 16px; right: 16px;
+}
+main #product_list .container .item3 .box .like_img img {width: 100%;}
+main #product_list .container .item3 .txt {
+    height: 113px;
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between; align-items: flex-start;
+}
+main #product_list .container .item3 .txt h2 {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item3 .txt .name {
+    font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #product_list .container .item3 .txt .price {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item3 .txt .color {}
+/* item4 */
+main #product_list .container .item4 {
+    width: 259px; height: 444px; 
+    display: flex; flex-flow: column nowrap;justify-content: space-between;
+}
+main #product_list .container .item4 .box {position: relative;}
+main #product_list .container .item4 .box .item_img {
+    width: 259px; height: 312px;
+}
+main #product_list .container .item4 .box .item_img img {width: 100%;}
+main #product_list .container .item4 .box .like_img {
+    width: 23px; height: 23px;
+    position: absolute;
+    top: 16px; right: 16px;
+}
+main #product_list .container .item4 .box .like_img img {width: 100%;}
+main #product_list .container .item4 .txt {
+    height: 113px;
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between; align-items: flex-start;
+}
+main #product_list .container .item4 .txt h2 {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item4 .txt .name {
+    font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #product_list .container .item4 .txt .price {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item4 .txt .color {}
+/* item5 */
+main #product_list .container .item5 {
+    width: 259px; height: 444px; 
+    display: flex; flex-flow: column nowrap;justify-content: space-between;
+}
+main #product_list .container .item5 .box {position: relative;}
+main #product_list .container .item5 .box .item_img {
+    width: 259px; height: 312px;
+}
+main #product_list .container .item5 .box .item_img img {width: 100%;}
+main #product_list .container .item5 .box .like_img {
+    width: 23px; height: 23px;
+    position: absolute;
+    top: 16px; right: 16px;
+}
+main #product_list .container .item5 .box .like_img img {width: 100%;}
+main #product_list .container .item5 .txt {
+    height: 113px;
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between; align-items: flex-start;
+}
+main #product_list .container .item5 .txt h2 {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item5 .txt .name {
+    font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #product_list .container .item5 .txt .price {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+}
+main #product_list .container .item5 .txt .color {}
