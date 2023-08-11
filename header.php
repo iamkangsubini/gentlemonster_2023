@@ -16,7 +16,7 @@
                 </fieldset>
             </form>
             <a href="./login.html" id="login"><img src="./images/icon_person.png" alt=""></a>
-            <a href="#" id="basket"><img src="./images/icon_basket.png" alt=""></a>
+            <a href="./review.html" id="basket"><img src="./images/icon_basket.png" alt=""></a>
             <a href="#" id="menu"><img src="./images/icon_menu.png" alt=""></a>
         </div>
         <!-- nav 클릭 시 open nav -->
@@ -43,13 +43,13 @@
             </div>
             <!-- 내비게이션 -->
             <nav>
-                <a href="#">선글라스</a>
-                <a href="#">안경</a>
-                <a href="#">콜라보레이션</a>
-                <a href="#">스타일</a>
-                <a href="#">브랜드이슈</a>
+                <a href="./product_list.html">선글라스</a>
+                <a href="./product_list.html">안경</a>
+                <a href="./product_list.html">콜라보레이션</a>
+                <a href="./product_list.html">스타일</a>
+                <a href="./product_list.html">브랜드이슈</a>
                 <a href="#">매장보기</a>
-                <a href="#">수리서비스</a>
+                <a href="./product_list.html">수리서비스</a>
             </nav>
         </div>
     </header>

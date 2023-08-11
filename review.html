@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>리뷰게시판 | 젠틀몬스터</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/reponsive.css">
+    <style>
+        main {text-align: center;}
+        /* iframe은 마진이 안먹힌다. 따라서 main에 영향을 주어야함 */
+        iframe {width: 90%; margin-top: 100px; height: 500px;}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <?php include("./header.php") ?>
+    <main>
+        <!-- 외부 웹주소(게시판, 지도)를 내부HTML로 삽입하는 방법 -->
+        <iframe src="http://bini66.pe.kr/gnuboard5/bbs/board.php?bo_table=gentle_review" frameborder="0" scrolling="no"></iframe>
+    </main>
+    <!-- footer -->
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+</body>
+</html>

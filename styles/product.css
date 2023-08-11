@@ -1,6 +1,53 @@
+main {}
+/* 1. swiper-slide */
+main #product_slide {}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide1~6 */
+    width: 700px; height: 740px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .theme {
+    display: flex; flex-flow: column nowrap;
+    color: #fff; margin: 515px 0 0 62px;
+    /* 초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능추가) */
+    opacity: 0; transition: all 2s;
+    transform: translateX(50px);
+}
+main #product_slide .swiper-wrapper .swiper-slide .theme h1 {
+    font-weight: 700; font-size: 2.369rem; line-height: 50px; letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .theme p {
+    font-size: 1.777rem; letter-spacing: -0.02em;
+}
+main #product_slide .swiper-wrapper .slide1 {
+    background-image: url(../images/model/model_01.jpg);
+}
+main #product_slide .swiper-wrapper .slide2 {
+    background-image: url(../images/model/model_03.jpg);
+}
+main #product_slide .swiper-wrapper .slide3 {
+    background-image: url(../images/model/model_04.jpg);
+}
+main #product_slide .swiper-wrapper .slide4 {
+    background-image: url(../images/model/model_05.jpg);
+}
+main #product_slide .swiper-wrapper .slide5 {
+    background-image: url(../images/model/model_06.jpg);
+}
+main #product_slide .swiper-wrapper .slide6 {
+    background-image: url(../images/model/model_02.jpg);
+}
+/* swiper-scrollbar design */
+main #product_slide .swiper-scrollbar {
+    width: 500px; height: 5px;
+    background-color: #fff; left: 36.8%; bottom: 20px;
+}/* 스크롤 배경(크기, 위치o), position:absolute 기본설정 */
+main #product_slide .swiper-scrollbar-drag {
+    background-color: #1dda7f;
+}/* 스크롤 막대(크기x) */
 /* catetory */
 main #category {
-    background: lightcoral;
     width: 1350px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -100,7 +147,6 @@ main #category .circle_frame a span {
 }
 /* product_list */
 main #product_list {
-    background: lightgoldenrodyellow;
     width: 1380px; margin: 0 auto;
     display: flex; flex-flow: column nowrap; justify-content: space-between;
 }
@@ -143,7 +189,6 @@ main #product_list .title .bottom #product_align option {
 }
 /* container */
 main #product_list .container {
-    background: lightpink;
     width: 1380px; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     margin-top: 40px;
@@ -170,7 +215,7 @@ main #product_list .container .item1 .txt {
     justify-content: space-between; align-items: flex-start;
 }
 main #product_list .container .item1 .txt h2 {
-    font-size: 1.333rem; letter-spacing: -0.02em;
+    font-size: 1.333rem; letter-spacing: -0.02em; color: #1D74DA;
 }
 main #product_list .container .item1 .txt .name {
     font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
@@ -201,7 +246,7 @@ main #product_list .container .item2 .txt {
     justify-content: space-between; align-items: flex-start;
 }
 main #product_list .container .item2 .txt h2 {
-    font-size: 1.333rem; letter-spacing: -0.02em;
+    font-size: 1.333rem; letter-spacing: -0.02em; color: #1D74DA;
 }
 main #product_list .container .item2 .txt .name {
     font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
@@ -232,7 +277,7 @@ main #product_list .container .item3 .txt {
     justify-content: space-between; align-items: flex-start;
 }
 main #product_list .container .item3 .txt h2 {
-    font-size: 1.333rem; letter-spacing: -0.02em;
+    font-size: 1.333rem; letter-spacing: -0.02em; color: #1D74DA;
 }
 main #product_list .container .item3 .txt .name {
     font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
@@ -263,7 +308,7 @@ main #product_list .container .item4 .txt {
     justify-content: space-between; align-items: flex-start;
 }
 main #product_list .container .item4 .txt h2 {
-    font-size: 1.333rem; letter-spacing: -0.02em;
+    font-size: 1.333rem; letter-spacing: -0.02em; color: #1D74DA;
 }
 main #product_list .container .item4 .txt .name {
     font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;
@@ -294,7 +339,7 @@ main #product_list .container .item5 .txt {
     justify-content: space-between; align-items: flex-start;
 }
 main #product_list .container .item5 .txt h2 {
-    font-size: 1.333rem; letter-spacing: -0.02em;
+    font-size: 1.333rem; letter-spacing: -0.02em; color: #1D74DA;
 }
 main #product_list .container .item5 .txt .name {
     font-size: 1.333rem; font-weight: 500; letter-spacing: -0.02em;

@@ -6,6 +6,10 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>안경 | GENTLEMONSTER</title>
+    <!-- swiper slide -->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- favicon, style -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
@@ -17,6 +21,49 @@
     <!-- header.php -->
     <main>
         <!-- 1. swiper-slide -->
+        <div class="swiper" id="product_slide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1">
+                    <div class="theme"> <!-- 또는 dl > dt · dd -->
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="theme">
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="theme">
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide4">
+                    <div class="theme"> 
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide5">
+                    <div class="theme">
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide6">
+                    <div class="theme">
+                        <h1>세련된 칼라, 디자인<br>초경량 프레임</h1>
+                        <p>gentlemonster</p>
+                    </div>
+                </div>
+            </div><!-- e:swiper-wrapper -->
+            <div class="swiper-scrollbar"></div>
+        </div>
         <!-- 2. category -->
         <div id="category">
             <div class="all">
@@ -103,8 +150,8 @@
                 </div>
                 <div class="item2">
                     <div class="box">
-                        <a href="#"><img src="./images/glasses_img/glasses_10.jpg" alt=""></a>
-                        <a href="#"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
+                        <a href="#" class="item_img"><img src="./images/glasses_img/glasses_10.jpg" alt=""></a>
+                        <a href="#" class="like_img"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
                     </div>
                     <div class="txt">
                         <h2>Blue Light Pritection</h2>
@@ -119,8 +166,8 @@
                 </div>
                 <div class="item3">
                     <div class="box">
-                        <a href="#"><img src="./images/glasses_img/glasses_09.jpg" alt=""></a>
-                        <a href="#"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
+                        <a href="#" class="item_img"><img src="./images/glasses_img/glasses_09.jpg" alt=""></a>
+                        <a href="#" class="like_img"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
                     </div>
                     <div class="txt">
                         <h2>Blue Light Pritection</h2>
@@ -137,8 +184,8 @@
                 </div>
                 <div class="item4">
                     <div class="box">
-                        <a href="#"><img src="./images/glasses_img/glasses_08.jpg" alt=""></a>
-                        <a href="#"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
+                        <a href="#" class="item_img"><img src="./images/glasses_img/glasses_08.jpg" alt=""></a>
+                        <a href="#" class="like_img"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
                     </div>
                     <div class="txt">
                         <h2>Blue Light Pritection</h2>
@@ -154,8 +201,8 @@
                 </div>
                 <div class="item5">
                     <div class="box">
-                        <a href="#"><img src="./images/glasses_img/glasses_07.jpg" alt=""></a>
-                        <a href="#"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
+                        <a href="#" class="item_img"><img src="./images/glasses_img/glasses_07.jpg" alt=""></a>
+                        <a href="#" class="like_img"><img src="./images/glasses_img/favorite.png" alt="관심상품등록"></a>
                     </div>
                     <div class="txt">
                         <h2>Blue Light Pritection</h2>
@@ -173,5 +220,37 @@
         </div>
     </main>
     <!-- footer.php -->
+    <script>
+        // 특정 페이지에만 해당하는 JS 동작기능은 내부스크립트로 작성해도 된다. product_slide 기능은 product_list.html가 모든 페이지에 존재하기 때문에 외부에 작성해야한다.
+        const product_slide = new Swiper("#product_slide",{
+            slidesPerView:1, //한번에 보이는 슬라이드 개수
+            centeredSlides:true, //슬라이드 기준이 중심부터 시작설정
+            loop:true, //무한 반복 설정
+            autoplay:{delay:2000}, //자동재생
+            speed:800, //슬라이드 전환 시 부드러운 전환
+            scrollbar:{el:'#product_slide .swiper-scrollbar'}, //스크롤바 표시
+            on:{
+                init:function(){
+                    //슬라이드가 변경되기 전 초기 실행함수
+                    this.slides[this.activeIndex].querySelector('.theme').style.opacity = '1';
+                },
+                slideChange:function(){
+                    //슬라이드 변경될때 인식되는 실행함수
+                    //1. 활성화(가운데)슬라이드 제외 나머지 opacity:0
+                    this.slides.forEach(target => {
+                        target.querySelector('.theme').style.opacity = '0';
+                        target.querySelector('.theme').style.transform = 'translateX(50px)';
+                    })
+                    //2. 활성화 슬라이드만 opacity:1
+                    this.slides[this.activeIndex].querySelector('.theme').style.opacity = '1';
+                    this.slides[this.activeIndex].querySelector('.theme').style.transform = 'translateX(0)';
+                }
+            },
+            breakpoints:{
+                700:{slidesPerView:2, centeredSlides:false,},
+                1000:{slidesPerView:3, centeredSlides:true,},
+            },
+        });
+    </script>
 </body>
 </html>
